@@ -8,6 +8,7 @@ import { GithubSearchComponent } from './Details/github-search/github-search.com
 import { GithubNavbarComponent } from './Details/github-navbar/github-navbar.component';
 import { PageNotFoundComponent } from './Details/page-not-found/page-not-found.component';
 import { LoadingColorChangeDirective } from './Directives/loading-color-change.directive';
+import { TimePasedCountPipe } from './Pipes/time-pased-count.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LoadingColorChangeDirective } from './Directives/loading-color-change.d
     GithubSearchComponent,
     GithubNavbarComponent,
     PageNotFoundComponent,
-    LoadingColorChangeDirective
+    LoadingColorChangeDirective,
+    TimePasedCountPipe
   ],
   imports: [
     BrowserModule,
