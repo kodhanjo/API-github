@@ -7,6 +7,7 @@ import { GithubProfileComponent } from './Details/github-profile/github-profile.
 import { GithubSearchComponent } from './Details/github-search/github-search.component';
 import { GithubNavbarComponent } from './Details/github-navbar/github-navbar.component';
 import { PageNotFoundComponent } from './Details/page-not-found/page-not-found.component';
+import { LoadingColorChangeDirective } from './Directives/loading-color-change.directive';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PageNotFoundComponent } from './Details/page-not-found/page-not-found.c
     GithubProfileComponent,
     GithubSearchComponent,
     GithubNavbarComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    LoadingColorChangeDirective
   ],
   imports: [
     BrowserModule,
