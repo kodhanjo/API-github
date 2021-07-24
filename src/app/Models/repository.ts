@@ -1,5 +1,5 @@
 export class Repository {
-    html_url!: string;
+  html_url!: string;
   description!: string;
   created_at!: Date;
   name!: string;
