@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { DetailsComponent } from './details/details.component';
 import { GithubProfileComponent } from './Details/github-profile/github-profile.component';
 import { GithubSearchComponent } from './Details/github-search/github-search.component';
+import { GithubNavbarComponent } from './Details/github-navbar/github-navbar.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { GithubSearchComponent } from './Details/github-search/github-search.com
     HomeComponent,
     DetailsComponent,
     GithubProfileComponent,
-    GithubSearchComponent
+    GithubSearchComponent,
+    GithubNavbarComponent
   ],
   imports: [
     BrowserModule,
