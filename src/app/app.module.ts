@@ -9,20 +9,24 @@ import { GithubNavbarComponent } from './Details/github-navbar/github-navbar.com
 import { PageNotFoundComponent } from './Details/page-not-found/page-not-found.component';
 import { LoadingColorChangeDirective } from './Directives/loading-color-change.directive';
 import { TimePasedCountPipe } from './Pipes/time-pased-count.pipe';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
+    TimePasedCountPipe,
+    LoadingColorChangeDirective,
+    GithubNavbarComponent,
     GithubProfileComponent,
     GithubSearchComponent,
-    GithubNavbarComponent,
     PageNotFoundComponent,
-    LoadingColorChangeDirective,
-    TimePasedCountPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
