@@ -7,7 +7,6 @@ export class User {
     bio!: string;
     name!: string;
     User!:string;
-    apiKey!: string;
     followers!: string;
     following!: string;
     public_repo!: string;
