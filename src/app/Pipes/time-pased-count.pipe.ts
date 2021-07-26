@@ -24,7 +24,7 @@ export class TimePasedCountPipe implements PipeTransform {
       let counter;
       // tslint:disable-next-line:forin
       for (const i in intervals) {
-        counter = Math.floor(seconds / y);
+        counter = Math.floor(seconds);
         if (counter > 0) {
           if (counter === 1) {
             return 'a' + ' ' + i + ' ago'; // singular (1 day ago)
