@@ -52,7 +52,7 @@
                 <div class="card-action text-center ">
                   <div class="row">
                     <div class="col-sm-6">
-                      <button (click)="findRepos(gtUser?.repository_url)" class='btn  btn-sm btn-primary'>Repositories</button>
+                      <button (click)="findRepos" class='btn  btn-sm btn-primary'>Repositories</button>
                     </div>
                     <div class="col-sm-6">
                       <a href="{{gtUser?.html_url}}" class='btn btn-sm btn-success'>Github Profile</a>
@@ -92,7 +92,7 @@
               </div>
               <div class="col-sm-12">
                   <span class="text-center text-info font-italic">
-                    Created {{repo?.updated_at | date |countTimePassed}}
+                    Created {{repo?.updated_at | date |timePasedCount}}
                   </span>
               </div>
             </div>
@@ -124,7 +124,7 @@
                   {{repo?.language}}
                 </div>
                 <div class="col-md-4"> <span>updated:
-                    {{repo?.updated_at | date |TimePassedCount}}</span>
+                    {{repo?.updated_at | date | timePasedCount}}</span>
                 </div>
               </div>
             </div>
