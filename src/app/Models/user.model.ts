@@ -6,7 +6,11 @@ export class User {
     html_url!: string;
     bio!: string;
     name!: string;
+    User!:string;
+    apiKey!: string;
     followers!: string;
+    following!: string;
+    public_repo!: string;
     gists_url!: string;
     starred_url!: string;
     subscriptions_url!: string;

@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: 'http://github/api'
+  apiKey: 'http://github/api'
 };

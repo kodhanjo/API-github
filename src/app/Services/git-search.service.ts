@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -12,7 +13,7 @@ export class GitSearchService {
   constructor(private http: HttpClient) {}
   getMyInfo(): Promise<any> {
     return new Promise((resolve, reject) => {
-      const apiUrl = `https://api.github.com/users/kodhanjo?access_token=${environment}`;
+      const apiUrl = `https://api.github.com/users/kodhanjo?access_token=${environment.apiKey}`;
       this.http
         .get<any>(apiUrl)
         .toPromise()
@@ -24,7 +25,7 @@ export class GitSearchService {
   }
   getMyRepos(): Promise<any> {
     return new Promise((resolve, reject) => {
-      const apiUrl = `https://api.github.com/users/kodhanjo/repos?access_token=${environment}`;
+      const apiUrl = `https://api.github.com/users/kodhanjo/repos?access_token=${environment.apiKey}`;
       this.http
         .get<any>(apiUrl)
         .toPromise()
