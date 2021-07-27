@@ -1,6 +1,6 @@
 <div class="container-fluid mt-5 py-5" *ngIf="isConnected">
     <div  class="loader text-center" *ngIf='loading'>
-      <p appLoadingColorChange class="h1">Loading...</p>
+      <p appLoadingColorChange class="h1">Loading... <br><br> Please wait!</p>
     </div>
   </div>
   <div class="card w-50 w-responsive m-auto" *ngIf="!loading && isConnected">

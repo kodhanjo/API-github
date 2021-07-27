@@ -13,7 +13,7 @@ export class GitSearchService {
   constructor(private http: HttpClient) {}
   getMyInfo(): Promise<any> {
     return new Promise((resolve, reject) => {
-      const apiUrl = `https://api.github.com/users/kodhanjo?access_token=${environment.apiKey}`;
+      const apiUrl = `https://api.github.com/users/kodhanjo?access_token=${environment.apiUrl}`;
       this.http
         .get<any>(apiUrl)
         .toPromise()
@@ -25,7 +25,7 @@ export class GitSearchService {
   }
   getMyRepos(): Promise<any> {
     return new Promise((resolve, reject) => {
-      const apiUrl = `https://api.github.com/users/kodhanjo/repos?access_token=${environment.apiKey}`;
+      const apiUrl = `https://api.github.com/users/kodhanjo/repos?access_token=${environment.apiUrl}`;
       this.http
         .get<any>(apiUrl)
         .toPromise()

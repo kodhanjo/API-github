@@ -3,7 +3,7 @@
       <div class="row">
         <div class="col-md-4">
           <div class="form-group">
-            <label for="options">Type</label>
+            <label for="options">Option</label>
             <select class="form-control" id="options" #criteria>
               <option>Users</option>
               <option>Repositories</option>
@@ -12,7 +12,7 @@
         </div>
         <div class="col-md-8">
           <div class="form-group">
-            <label for='data'>Query</label>
+            <label for='data'>Search here</label>
             <input id='data' type="search" class="form-control" #search required
                    onfocus="this.value=''">
           </div>
@@ -27,7 +27,7 @@
     </form>
   </div>
   <div class="loader text-center py-5 mt-5" *ngIf='loading'>
-    <p appLoadingColorChange class="h1">Loading...</p>
+    <p appLoadingColorChange class="h1">Loading... <br><br> Please wait! </p>
   </div>
   <div class="container-fluid p-5" *ngIf="!repodetail">
     <div class="row" *ngIf="!repodata">
